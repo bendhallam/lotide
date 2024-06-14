@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
 
 // FUNCTION IMPLEMENTATION
 const head = function(array) {
-  return array[0];
+  return array[0]; //returns the first element of the fed array
 };
 
 // TEST CASES
