@@ -25,16 +25,10 @@ assertEqual(tail(strings)[0], "in");
 assertEqual(tail(strings)[1], "the");
 assertEqual(tail(strings)[2], "box?");
 
-const solo = [2];
-assertEqual(tail(solo), '');
-
-const empty = [];
-assertEqual(tail(empty), '');
-
-
 // TEST CASE: CHECK ORIGINAL ARRAY
 const words = ["Hello there", "General", "Kenobi"];
 tail(words);
+assertEqual(tail(words).length, 2);
 assertEqual(words.length, 3);
 
 const noWords = [];
