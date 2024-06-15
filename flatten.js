@@ -24,7 +24,7 @@ const assertArraysEqual = function(actual, expected) {
 
 
 // IMPLEMENT FUNCTION
-const flatten = function(arr){
+const flatten = function(arr) {
   let flatArr = []; // create empty array for elements of source array to be pushed into
   for (let i = 0; i < arr.length; i++) { // iterate through the elements of arr
     if (Array.isArray(arr[i])) { // check if the element is an array
@@ -32,15 +32,15 @@ const flatten = function(arr){
         flatArr.push(arr[i][j]); // push elements of the subarray into the empty array
       }
     } else { // if not an array
-      flatArr.push(arr[i]) // push element into empty array
+      flatArr.push(arr[i]); // push element into empty array
     }
   }
   return flatArr; // return new flattened array
-}
+};
 
 
 
 // TEST CASES
 assertArraysEqual(flatten([1, [2, 4, 5], 3]), [1, 2, 4, 5, 3]);
 assertArraysEqual(flatten(["I", "Am", ["Very", "Thirsty"], "and", "Hungry"]), ["I", "Am", "Very", "Thirsty", "and", "Hungry"]);
-assertArraysEqual(flatten([1, 3, ["what's", "up"], "there's", "numbers", 2, 3]), [1, 3, "what's", "up", "there's", "numbers", 2, 3])
+assertArraysEqual(flatten([1, 3, ["what's", "up"], "there's", "numbers", 2, 3]), [1, 3, "what's", "up", "there's", "numbers", 2, 3]);
