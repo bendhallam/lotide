@@ -25,11 +25,12 @@ const assertArraysEqual = function(actual, expected) {
 const letterPositions = function(sentence) {
   const results = {}; // create empty object to put letters and positions
   for (let i = 0; i < sentence.length; i++) { // iterate through characters within sentence string
-    if (sentence.charAt(i) !== ' ') {  // ensure character is not a space
-      if (results[sentence.charAt(i)]) { // check if character has already appeared in string
-        results[sentence.charAt(i)].push(i); // if it has, add its position it to the position array
+    const char = sentence.charAt(i); // create a variable to store long repeated value
+    if (char !== ' ') {  // ensure character is not a space
+      if (results[char]) { // check if character has already appeared in string
+        results[char].push(i); // if it has, add its position it to the position array
       } else {
-        results[sentence.charAt(i)] = [i]; // if not initialize array with its position
+        results[char] = [i]; // if not initialize array with its position
       }
     }
   }
