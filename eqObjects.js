@@ -46,13 +46,7 @@ const eqObjects = function(obj1, obj2) {
   }
 };
 
-// Check if same number of keys
-// Check if same keys
-// Check if key is an array or not
-// See if key's value matches for both objects
-
-
-
+// TEST CASES
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 eqObjects(shirtObject, anotherShirtObject); // => true
