@@ -40,10 +40,9 @@ const eqObjects = function(obj1, obj2) {
         }
       } else if (obj1[key] !== obj2[key]) { // if it isn't an array, check if it matches obj2
         return false; // if it doesn't, no match
-      } else { // if it does, we have a full match!!!
-        return true;
       }
     }
+    return true; // if no mismatches were flagged, we have a match
   }
 };
 
