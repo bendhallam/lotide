@@ -28,10 +28,9 @@ const takeUntil = (array, callback) => {
     if (callback(element) === false) { // while elements are being returned falsey
       results.push(element); // keep adding them to results array
     } else { // until an element is returned falsey
-      break; // then stop adding any more elements
+      return results; // then stop adding any more elements and return array
     }
   }
-  return results;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
