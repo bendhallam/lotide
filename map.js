@@ -21,13 +21,13 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // IMPLEMENT FUNCTION
-const map = (array, callback) => { 
+const map = (array, callback) => {
   const results = [];
   for (let item of array) { // iterate through items in array
     results.push(callback(item)); // create new array of old elements run through callback function
   }
   return results;
-}
+};
 
 // TEST CASES
 const words = ["ground", "control", "to", "major", "tom"];
@@ -36,5 +36,5 @@ assertArraysEqual(map(words, (word) => word[0]), ['g', 'c', 't', 'm', 't']); // 
 const numbers = [1, 2, 3, 4, 5];
 assertArraysEqual(map(numbers, (number) => number * 2), [2, 4, 6, 8, 10]); // multiply numbers in array by 2
 
-const people = ["John", "Peter", "Paul"]
+const people = ["John", "Peter", "Paul"];
 assertArraysEqual(map(people, (person) => person + "son"), ["Johnson", "Peterson", "Paulson"]); // give each name the suffix -son
