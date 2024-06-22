@@ -13,6 +13,7 @@ const findKey = (object, callback) => {
       return key; // return first key whose value returns true
     }
   }
+  return null;
 };
 
 // TEST CASES
