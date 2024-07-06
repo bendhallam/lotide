@@ -30,7 +30,7 @@ module.exports = {
   findKey: findKey,
   findKeyByValue: findKeyByValue,
   flatten: flatten,
-  letterPosition: letterPosition,
+  letterPositions: letterPositions,
   map: map,
   takeUntil: takeUntil,
   without: without 
