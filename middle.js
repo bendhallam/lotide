@@ -1,5 +1,3 @@
-const assertArraysEqual = require("./assertArraysEqual")
-
 // IMPLEMENT FUNCTION
 const middle = function(arr) {
   let middleArr = []; // create an empty array to push middle elements into
