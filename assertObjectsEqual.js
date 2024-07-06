@@ -65,3 +65,5 @@ const objFour = {
   smell: "Eggs"
 };
 assertObjectsEqual(objThree, objFour);
+
+module.exports = assertObjectsEqual;

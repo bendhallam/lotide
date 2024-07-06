@@ -7,7 +7,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const babies = true;
-const apples = true;
-
 module.exports = assertEqual;
