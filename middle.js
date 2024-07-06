@@ -1,24 +1,4 @@
-// IMPLEMENT EQUAL ARRAYS FUNCTION - checks if two arrays are equal and report result to console
-const eqArrays = function(arrOne, arrTwo) {
-  if (arrOne.length !== arrTwo.length) { // check if arrays are the different length
-    return false;
-  } else {
-    for (let i = 0; i < arrOne.length; i++)
-      if (arrOne[i] !== arrTwo[i]) { // check if arrays have any mismatching elements
-        return false;
-      }
-  }
-  return true; // if neither differences are flagged, return true
-};
-const assertArraysEqual = function(actual, expected) {
-  if (!eqArrays(actual, expected)) { // check if arrays aren't equal
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`); // if unequal, log failure message to console
-    return false;
-  } else {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`); // if equal, log success message to console
-    return true;
-  }
-};
+const assertArraysEqual = require("./assertArraysEqual")
 
 // IMPLEMENT FUNCTION
 const middle = function(arr) {
@@ -34,8 +14,4 @@ const middle = function(arr) {
   return middleArr; // return new array of middle element(s)
 };
 
-// TEST CASES
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle(["Please", "Work", "I", "Beg", "Of", "You"]), ["I", "Beg"]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
-assertArraysEqual(middle([1, "hello", true]), ["hello"]);
+module.exports = middle;
