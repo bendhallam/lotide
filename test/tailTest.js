@@ -8,7 +8,7 @@ describe("#tail", () => {
     assert.deepEqual(tail([1, 2, 3]), [2, 3]);
   });
   it("returns [5, 6, 3, 7] for [1, 5, 6, 3, 7]", () => {
-    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+    assert.deepEqual(tail([1, 5, 6, 3, 7]), [5, 6, 3, 7]);
   });
   it("returns empty array for ['5']", () => {
     assert.deepEqual(tail(['5']), []);

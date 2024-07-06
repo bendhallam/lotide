@@ -3,11 +3,6 @@ const assert = require('chai').assert;
 const middle = require('../middle');
 
 // // TEST CASES
-// assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-// assertArraysEqual(middle(["Please", "Work", "I", "Beg", "Of", "You"]), ["I", "Beg"]);
-// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
-// assertArraysEqual(middle([1, "hello", true]), ["hello"]);
-
 describe("#middle", () => {
   it("returns [3] for [1, 2, 3, 4, 5]", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5]), [3])
