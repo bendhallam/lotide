@@ -10,9 +10,4 @@ const assertEqual = function(actual, expected) {
 const babies = true;
 const apples = true;
 
-//TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(babies, apples);
-assertEqual("ostriches", "peanuts");
-assertEqual("Animals", "Animals");
+module.exports = assertEqual;
